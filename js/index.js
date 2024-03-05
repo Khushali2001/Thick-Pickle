@@ -13,7 +13,7 @@ function canvas() {
 
   function files(index) {
     var data = `
-      ../images/canvas_1/0003.webp
+     images/canvas_1/0003.webp
   ../images/canvas_1/0004.webp
   ../images/canvas_1/0005.webp
   ../images/canvas_1/0006.webp

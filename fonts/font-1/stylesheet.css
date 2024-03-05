@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'APK Protocol';
+    src: url('APK-Protocol-Regular.eot');
+    src: url('APK-Protocol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('APK-Protocol-Regular.woff2') format('woff2'),
+        url('APK-Protocol-Regular.woff') format('woff'),
+        url('APK-Protocol-Regular.ttf') format('truetype'),
+        url('APK-Protocol-Regular.svg#APK-Protocol-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,612 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "APK Protocol";
+  src: url("../fonts/font-1/APK-Protocol-Regular.eot");
+  src: url("../fonts/font-1/APK-Protocol-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/font-1/APK-Protocol-Regular.woff2") format("woff2"),
+    url("../fonts/font-1/APK-Protocol-Regular.woff") format("woff"),
+    url("../fonts/font-1/APK-Protocol-Regular.ttf") format("truetype"),
+    url("../fonts/font-1/APK-Protocol-Regular.svg#APK-Protocol-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sharp Grotesk Black 15";
+  src: url("../fonts/SharpGrotesk-Black15/SharpGrotesk-Black15.eot");
+  src: url("../fonts/SharpGrotesk-Black15/SharpGrotesk-Black15.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SharpGrotesk-Black15/SharpGrotesk-Black15.woff2")
+      format("woff2"),
+    url("../fonts/SharpGrotesk-Black15/SharpGrotesk-Black15.woff")
+      format("woff"),
+    url("../fonts/SharpGrotesk-Black15/SharpGrotesk-Black15.ttf")
+      format("truetype"),
+    url("../fonts/SharpGrotesk-Black15/SharpGrotesk-Black15.svg#SharpGrotesk-Black15")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sharp Grotesk Black 20";
+  src: url("../fonts/SharpGrotesk-Black20/SharpGrotesk-Black20.eot");
+  src: url("../fonts/SharpGrotesk-Black20/SharpGrotesk-Black20.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SharpGrotesk-Black20/SharpGrotesk-Black20.woff2")
+      format("woff2"),
+    url("../fonts/SharpGrotesk-Black20/SharpGrotesk-Black20.woff")
+      format("woff"),
+    url("../fonts/SharpGrotesk-Black20/SharpGrotesk-Black20.ttf")
+      format("truetype"),
+    url("../fonts/SharpGrotesk-Black20/SharpGrotesk-Black20.svg#SharpGrotesk-Black20")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sharp Grotesk Black 25";
+  src: url("../fonts/SharpGrotesk-Black25/SharpGrotesk-Black25.eot");
+  src: url("../fonts/SharpGrotesk-Black25/SharpGrotesk-Black25.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SharpGrotesk-Black25/SharpGrotesk-Black25.woff2")
+      format("woff2"),
+    url("../fonts/SharpGrotesk-Black25/SharpGrotesk-Black25.woff")
+      format("woff"),
+    url("../fonts/SharpGrotesk-Black25/SharpGrotesk-Black25.ttf")
+      format("truetype"),
+    url("../fonts/SharpGrotesk-Black25/SharpGrotesk-Black25.svg#SharpGrotesk-Black25")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8eff00 transperent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10spx;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ff000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8eff00;
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+body {
+  color: #8eff00;
+  line-height: 1;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #8eff00;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* main  */
+
+#main {
+  background-color: #303503;
+}
+
+/* header css start */
+
+header {
+  width: 100%;
+  padding: 15px 30px;
+  position: fixed;
+  z-index: 9;
+  mix-blend-mode: difference;
+}
+
+header .logo {
+  font-family: "Sharp Grotesk Black 15";
+  font-size: 2vmax;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+header .logo p {
+  color: #8cff00;
+}
+
+/* hero section css start */
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-section .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-txt {
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 20px;
+  mix-blend-mode: difference;
+}
+
+.hero-txt p:nth-child(1) {
+  word-spacing: 0;
+  font-family: "Sharp Grotesk Black 20";
+  font-size: 6vmax;
+  font-weight: 900;
+}
+
+.hero-txt p:nth-child(2) {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Sharp Grotesk Black 15";
+  font-size: 10vmax;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.hero-txt p:nth-child(3),
+.hero-txt p:nth-child(4) {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Sharp Grotesk Black 25";
+  font-size: 12vmax;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.hero-txt p {
+  transform-origin: top;
+}
+
+/* #canvas1 */
+
+canvas {
+  width: 100%;
+}
+
+#canvas1,
+#canvas2,
+#canvas3 {
+  height: 100vh;
+  background-color: #303503;
+  scroll-behavior: smooth;
+  padding: 50px 0 !important;
+  position: relative;
+}
+
+#canvas1 .canvas_txt,
+#canvas2 .canvas_txt,
+#canvas3 .canvas_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#canvas1 .canvas_txt h3,
+#canvas2 .canvas_txt h3,
+#canvas3 .canvas_txt h3 {
+  font-family: "Sharp Grotesk Black 15";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 0.7;
+  font-size: 3.5vmax;
+}
+
+#canvas1 .canvas_txt p,
+#canvas2 .canvas_txt p,
+#canvas3 .canvas_txt p {
+  margin-top: 20px;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  max-width: 350px;
+  line-height: 1.5;
+}
+
+/* hero-txt css */
+
+.hero-txt-2 {
+  padding: 150px 20px;
+  background-color: #8cff00;
+  width: 100%;
+  color: #041a00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-txt-2 span,
+.hero-txt-2 p {
+  display: block;
+  text-transform: uppercase;
+}
+
+.hero-txt-2 p:first-child {
+  font-size: 7vmax;
+  font-family: "Sharp Grotesk Black 20";
+  line-height: 0.8;
+}
+
+.hero-txt-2 p:nth-child(2),
+.hero-txt-2 p:nth-child(6) {
+  font-size: 18vmax;
+  font-family: "Sharp Grotesk Black 25";
+  line-height: 0.8;
+}
+
+.hero-txt-2 span:nth-child(3),
+.hero-txt-2 p:nth-child(5) {
+  font-size: 8vmax;
+  font-family: "Sharp Grotesk Black 25";
+  line-height: 0.9;
+}
+
+.hero-txt-2 span:nth-child(4) {
+  font-size: 10vmax;
+  font-family: "Sharp Grotesk Black 25";
+  line-height: 0.9;
+}
+
+/* marquee-section css */
+
+.marquee-section {
+  padding: 40px 0;
+  background-color: #8eff00;
+  color: #041a00;
+  flex-direction: column;
+}
+
+.marquee-section h4 {
+  font-family: "Sharp Grotesk Black 15";
+  text-transform: uppercase;
+  font-size: 4vmax;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #000;
+}
+
+.marque {
+  width: 100%;
+  overflow-x: auto;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-size: 17px;
+}
+
+.marque::-webkit-scrollbar {
+  display: none;
+}
+
+.marque div {
+  flex-shrink: 0;
+  width: 600px;
+  padding: 25px 30px;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  animation: marquee 30s infinite linear;
+}
+
+/* slider */
+
+.slider {
+  padding: 60px 20px;
+  background-color: #272b05;
+}
+
+.slider h2 {
+  font-family: "Sharp Grotesk Black 20";
+  font-size: 8vmax;
+}
+
+.slider p {
+  color: #a3a3a3;
+  font-size: 1.5vmax;
+  margin-bottom: 30px;
+}
+
+.slider .swiper-slide h3 {
+  font-family: "Sharp Grotesk Black 15";
+  color: #a3a3a3;
+  font-size: 4vmax;
+}
+
+.slider .swiper-slide p {
+  max-width: 300px;
+  color: #a3a3a3;
+  font-size: 16px;
+}
+
+.slider .swiper-slide a {
+  font-family: "Sharp Grotesk Black 15";
+  color: #041a00;
+  background: #8cff00;
+  font-size: 3vmax;
+  border-radius: 0;
+  padding: 0 10px;
+}
+
+.swiper-slide .video {
+  padding: 0 10%;
+  transform: scale(0);
+  z-index: 1;
+  transition: all 0.8s linear;
+  opacity: 0;
+}
+
+.swiper-slide-active .video {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 5; /* Set a higher z-index for the active slide */
+}
+
+.swiper-slide p,
+.swiper-slide h3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s linear;
+}
+
+.swiper-slide-active p,
+.swiper-slide-active h3 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* swiper customization */
+
+.slider .swiper-pagination {
+  position: absolute;
+  top: 95%;
+  height: auto;
+}
+
+.slider span.swiper-pagination-bullet {
+  background: #65d405;
+}
+
+.slider .swiper-button-next,
+.slider .swiper-button-prev {
+  width: 62px;
+  height: 62px;
+  top: 95%;
+  z-index: 99;
+}
+
+.slider .swiper-button-next::after,
+.slider .swiper-button-prev::after {
+  display: none;
+}
+
+/* slider img css */
+
+#video1,
+#video2,
+#video3 {
+  position: relative;
+}
+
+#video1 img,
+#video2 img,
+#video3 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+}
+
+/* product css start */
+
+.products {
+  padding: 60px 20px;
+  background-color: #1d2200;
+}
+
+.products h2 {
+  font-size: 5vmax;
+  font-family: "Sharp Grotesk Black 25";
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.products p {
+  color: #a3a3a3;
+  font-size: 1.6vmax;
+}
+
+.products .col-4 {
+  padding-top: 60px;
+}
+
+.products .col-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.products .col-4 h3 {
+  font-family: "Sharp Grotesk Black 15";
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 4vmax;
+}
+
+.products .col-4 p {
+  font-size: 1vmax;
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #262c03;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h1 {
+  font-family: "Sharp Grotesk Black 15";
+  font-size: 18vmax;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .products .col-4 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .slider .d-flex.align-items-center {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slider .d-flex.align-items-center > div {
+    width: 100%;
+  }
+
+  .slider .swiper-slide p {
+    max-width: 100%;
+  }
+
+  .slider .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider .swiper-button-next,
+  .slider .swiper-button-prev {
+    top: 97%;
+  }
+
+  #canvas1 .canvas_txt p,
+  #canvas2 .canvas_txt p,
+  #canvas3 .canvas_txt p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero-txt p:nth-child(1) {
+    font-size: 5vmax;
+  }
+
+  .hero-txt p:nth-child(2) {
+    font-size: 6vmax;
+  }
+
+  .hero-txt p:nth-child(3),
+  .hero-txt p:nth-child(4) {
+    font-size: 7vmax;
+  }
+
+  .hero-txt-2 p:first-child {
+    font-size: 5vmax;
+  }
+  .hero-txt-2 p:nth-child(2),
+  .hero-txt-2 p:nth-child(6) {
+    font-size: 10vmax;
+  }
+  .hero-txt-2 span:nth-child(3),
+  .hero-txt-2 p:nth-child(5) {
+    font-size: 6vmax;
+    font-family: "Sharp Grotesk Black 25";
+    line-height: 0.9;
+  }
+  .hero-txt-2 span:nth-child(4) {
+    font-size: 8vmax;
+    text-align: center;
+  }
+
+  .slider .swiper-button-next,
+  .slider .swiper-button-prev {
+    top: 95%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .products .col-4 {
+    width: 100%;
+  }
+}

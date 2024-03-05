@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sharp Grotesk Black 25';
+    src: url('SharpGrotesk-Black25.eot');
+    src: url('SharpGrotesk-Black25.eot?#iefix') format('embedded-opentype'),
+        url('SharpGrotesk-Black25.woff2') format('woff2'),
+        url('SharpGrotesk-Black25.woff') format('woff'),
+        url('SharpGrotesk-Black25.ttf') format('truetype'),
+        url('SharpGrotesk-Black25.svg#SharpGrotesk-Black25') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
